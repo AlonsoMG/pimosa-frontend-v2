@@ -14,6 +14,11 @@ import { WorkDashboardComponent } from './work-dashboard/work-dashboard.componen
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/works',
+    pathMatch: 'full'
+  },
+  {
     path: 'machinery',
     component: MachineryListComponent
   },
@@ -52,6 +57,11 @@ const routes: Routes = [
   {
     path: 'works/work/:id',
     component: WorkDashboardComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/works',
+    pathMatch: 'full'
   },
 ];
 
