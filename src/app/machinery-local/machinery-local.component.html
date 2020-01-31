@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button type="button" id="sidebarCollapse" class="btn btn-primary" (click)="toggleActiveClass()">
+      <i class="fas fa-align-left"></i>
+      <span> Menu</span>
+    </button>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link section-main-title">Localización<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div class="row my-2">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h4 class="subtitle"><span class="subtitle-icon"><i class="far fa-edit"></i></span>Cambiar Ubicación
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Información</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Información</label>
+            <input type="number" class="form-control">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Información</label>
+            <input type="number" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Información</label>
+            <input type="date" class="form-control">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Información</label>
+            <input type="time" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Información</label>
+            <textarea type="text" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+          <button type="button" class="btn btn-success">Actualizar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div class="row my-2">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h4 class="subtitle"><span class="subtitle-icon"><i class="fas fa-map-marked-alt"></i></span>Ubicación
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div #map style="width:100%;height:540px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
